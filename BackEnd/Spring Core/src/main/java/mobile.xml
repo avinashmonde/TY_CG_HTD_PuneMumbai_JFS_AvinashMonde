@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- bean definitions here -->
+	
+	<bean class="com.capgemini.springcore.postprocessors.MyBeansPostProcessor"/>
+	
+	<bean id="mobile" class="com.capgemini.springcore.beans.MobileBean" autowire="byName">
+	<property name="brandname" value="sfa"/>
+	<property name="modelname" value="safa"/>
+	<property name="price" value="15646"/>
+	<property name="mobiledisplay" ref="mobiledisplay"></property>
+	</bean>
+	<bean id ="mobiledisplay" class="com.capgemini.springcore.beans.MobileDisplayBean" >
+	<property name="displaysize" value="123"></property>
+	<property name="resolution" value="456"></property>
+	
+	</bean>
+</beans>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- It is for list configuration -->
+	<!-- <bean id="medicine" class="com.capgemini.springcore.beans.Medicine">
+	<property name="name" value="crocin"></property>
+	<property name="type" value="allophathic"></property>
+	<property name="price" value="54.87"></property>
+	<property name="drugs">
+	<set>
+	<value>Abc</value>
+	<value>Xyz</value>
+	</set>
+	</property>
+	</bean> -->
+
+	<bean id="medicine" class="com.capgemini.springcore.beans.Medicine">
+	<property name="name" value="qwerty"></property>
+	<property name="type" value="asd"></property>
+	<property name="price" value="46.94"></property>
+	<property name="drugs">
+	<set>
+	<value>Xyx13</value>
+	<value>abc</value>
+	</set>
+	</property>
+	</bean>
+
+</beans>
